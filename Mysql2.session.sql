@@ -1,1 +1,5 @@
-select * from world.city WHERE CountryCode= "USA" and Name = "Buffalo";
+use Chinook;
+
+show tables;
+
+SELECT * FROM Genre;

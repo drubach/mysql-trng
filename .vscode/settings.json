@@ -10,7 +10,7 @@
             "driver": "MySQL",
             "username": "drubach",
             "name": "Mysql2",
-            "database": "world",
+            "database": "Chinook",
             "connectionTimeout": 30,
             "password": "!RmrEJJRy1258"
         }

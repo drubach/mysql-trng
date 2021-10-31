@@ -1,7 +1,7 @@
 import os 
 import pymysql
 
-username = "drubach"
+username = os.getlogin()
 
 # Connect to database
 connection = pymysql.connect(host='LocalHost',

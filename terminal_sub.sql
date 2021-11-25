@@ -1,3 +1,3 @@
 use Chinook;
 
-SELECT * FROM Friends
+SELECT * FROM Friends;

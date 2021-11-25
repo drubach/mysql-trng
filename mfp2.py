@@ -20,8 +20,10 @@ try:
 
     #Insert into table
     with connection.cursor() as cursor:
-        row = ("Bob", 21, "1990-02-06 23:04:56")
-        cursor.execute("INSERT INTO Friends VALUES (%s, %s, %s);", row)
+        rows = [("Dave", 22, "1989-02-06 23:04:56"),
+                ("Dan", 60, "1962-10-07 01:42:00"),
+                ("Fred", 100, "1921-11-20 14:24:30")]
+        cursor.executemany("INSERT INTO Friends VALUES (%s, %s, %s);", rows)
         connection.commit()
 finally:
     #Close the connection, regardless of whther the above was successful.
